@@ -1,0 +1,56 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: only light;
+  }
+
+  body {
+    @apply bg-yellow text-ink font-body antialiased;
+  }
+
+  h1 {
+    @apply font-display font-black uppercase tracking-[-0.03em] text-[clamp(2.5rem,6vw,3.5rem)];
+  }
+
+  h2 {
+    @apply font-display font-black uppercase tracking-[-0.02em] text-[clamp(1.75rem,4vw,2.25rem)];
+  }
+
+  h3 {
+    @apply font-display font-bold text-[clamp(1.25rem,3vw,1.5rem)];
+  }
+
+  small,
+  .label {
+    @apply font-body font-bold uppercase tracking-[0.05em] text-[0.75rem];
+  }
+}
+
+@layer utilities {
+  .brutalist-border {
+    @apply border-[3px] border-ink;
+  }
+
+  .brutalist-shadow {
+    @apply shadow-brutalist;
+  }
+
+  .brutalist-hover {
+    @apply transition-all duration-150 hover:-translate-y-1 hover:-translate-x-1 hover:shadow-brutalist-hover;
+  }
+
+  .brutalist-active {
+    @apply active:translate-y-0 active:translate-x-0 active:shadow-brutalist-none;
+  }
+
+  .brutalist-input {
+    @apply rounded-lg brutalist-border bg-white px-4 py-3 outline-none focus:shadow-[4px_4px_0px_0px_#1C1C14];
+  }
+
+  .card-surface {
+    @apply rounded-xl2 brutalist-border bg-white brutalist-shadow;
+  }
+}

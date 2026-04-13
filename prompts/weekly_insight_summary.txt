@@ -1,0 +1,3 @@
+﻿Summarize the last 7 days of mood check-ins.
+Highlight trends in mood, anxiety, and sleep.
+Keep it supportive and non-clinical.
