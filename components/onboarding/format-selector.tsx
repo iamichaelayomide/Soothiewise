@@ -4,10 +4,10 @@ import { cn } from "@/utils/cn";
 import { useOnboardingStore } from "@/hooks/use-onboarding-store";
 
 const options = [
-  "Through writing — I like to put thoughts into words",
-  "Through guided prompts — I like structure",
-  "Through conversation — I want something to talk to",
-  "Through exercises — breathing, grounding, movement",
+  "Through writing - I like to put thoughts into words",
+  "Through guided prompts - I like structure",
+  "Through conversation - I want something to talk to",
+  "Through exercises - breathing, grounding, movement",
   "I just want to track how I feel for now",
 ];
 

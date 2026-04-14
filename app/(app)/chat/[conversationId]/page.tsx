@@ -14,8 +14,8 @@ interface Message {
 
 const mockReplies = [
   "That sounds heavy. What part of it feels the most constant right now?",
-  "You’ve been carrying a lot. Where in your body do you feel it most?",
-  "I hear the pressure. What’s the smallest thing that would feel like relief today?",
+  "You-ve been carrying a lot. Where in your body do you feel it most?",
+  "I hear the pressure. What-s the smallest thing that would feel like relief today?",
 ];
 
 export default function ConversationPage() {
@@ -24,7 +24,7 @@ export default function ConversationPage() {
       id: "welcome",
       role: "assistant",
       content:
-        "I’m here with you. Tell me what’s been sitting on your chest lately.",
+        "I-m here with you. Tell me what-s been sitting on your chest lately.",
     },
   ]);
   const [isStreaming, setIsStreaming] = useState(false);
