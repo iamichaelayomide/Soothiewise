@@ -1,2 +1,0 @@
-﻿Detect risk language in a user's message. Output JSON with {safe: boolean, severity: "low"|"medium"|"high"|"critical"}.
-Use deterministic keyword matches first.

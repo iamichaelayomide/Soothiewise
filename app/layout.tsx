@@ -21,15 +21,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html
       lang="en"
-      className={`${displayFont.variable} ${bodyFont.variable} h-full antialiased`}
+      className={`${displayFont.variable} ${bodyFont.variable} h-full`}
     >
-      <body className="min-h-full flex flex-col bg-yellow text-ink">
+      <body className="min-h-full bg-yellow text-ink antialiased">
         {children}
       </body>
     </html>
