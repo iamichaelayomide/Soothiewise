@@ -15,8 +15,8 @@ const bodyFont = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Soothewise",
-  description: "Private mental wellness support for heavy days.",
+  title: "Soothewise Mobile",
+  description: "A calm, mobile-first mental wellness app for daily check-ins.",
 };
 
 export default function RootLayout({

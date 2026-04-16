@@ -5,10 +5,11 @@
 @layer base {
   :root {
     color-scheme: only light;
+    background: #f4ecd2;
   }
 
   body {
-    @apply bg-yellow text-ink font-body antialiased;
+    @apply bg-[#f4ecd2] text-ink font-body antialiased;
   }
 
   h1 {
