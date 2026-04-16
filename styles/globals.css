@@ -5,11 +5,11 @@
 @layer base {
   :root {
     color-scheme: only light;
-    background: #f4ecd2;
+    background: #f5d91f;
   }
 
   body {
-    @apply bg-[#f4ecd2] text-ink font-body antialiased;
+    @apply bg-[#f5d91f] text-ink font-body antialiased;
   }
 
   h1 {
@@ -31,6 +31,34 @@
 }
 
 @layer utilities {
+  .app-shell {
+    @apply rounded-[1.75rem] border-[2.5px] border-ink shadow-[0_14px_0px_0px_#1C1C14];
+  }
+
+  .app-panel-soft {
+    @apply app-shell bg-[#fff2a8];
+  }
+
+  .app-panel-warm {
+    @apply app-shell bg-[#ffe45e];
+  }
+
+  .app-panel-ink {
+    @apply app-shell bg-ink text-yellow;
+  }
+
+  .app-button-primary {
+    @apply rounded-[1rem] border-[2.5px] border-ink bg-ink px-4 py-3 text-sm font-black uppercase tracking-[0.08em] text-yellow transition active:translate-x-1 active:translate-y-1 active:shadow-none;
+  }
+
+  .app-button-secondary {
+    @apply rounded-[1rem] border-[2.5px] border-ink bg-[#fff4b4] px-4 py-3 text-sm font-black uppercase tracking-[0.08em] text-ink transition active:translate-x-1 active:translate-y-1 active:shadow-none;
+  }
+
+  .app-chip {
+    @apply inline-flex items-center rounded-full border-[2px] border-ink px-3 py-1 text-[0.68rem] font-black uppercase tracking-[0.08em];
+  }
+
   .brutalist-border {
     @apply border-[3px] border-ink;
   }
